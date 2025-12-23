@@ -3,20 +3,79 @@
 <head>
     <meta charset="utf-8">
     <title>Danny博客站</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Link.css">
     <link rel="stylesheet" type="text/css" href="GlassBackground.css">
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        body {
+        margin: 0;
+        height: 100vh;
+        background-color: white;
+        }
+        .flex {
+        display: flex;
+        }
+        .yuanJiao15 {
+        border-radius: 15px;
+        }
+        .logo {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        }
+        .column {
+        flex-direction: column;
+        }
+        .row {
+        flex-direction: row;
+        }
+        .bianKuangKX {
+        border-radius: 8px;
+        border: 2px solid #000000;
+        padding: 20px;
+        padding-left: 30px;
+        width: 180px;
+        height: 50px;
+        }
+        .shadow {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        }
+
+
+    </style>
 </head>
-<body>
+<body class="flex column" style="margin: 12px">
+    <!---头像栏--->
     <div style="
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 20px;
-        ">
-        <img src="https://i.ibb.co/ch7SyJBx/logo.jpg" alt="Danny" width= "80px" height= "80px">
+          padding: 15px;
+          padding-left:30px;
+          align-items: center;
+          justify-content: start;
+          border-bottom: 1px solid #999;
+          background-color: #f1f1f1;
+        " class="flex row">
+        <!---左侧--->
+        <div class="flex row bianKuangKX" style="
+            align-items: center;
+            justify-content: start;
+            padding-left: 15px;
+            padding-right:5px;
+            border-radius:7px
+            background-color:#D9FFFF;
+            ">
+            <div class="flex" style="background-color: #5CC4F1;border-radius: 7px">
+            <img style="margin: 5px;border-radius:7px" src="https://i.ibb.co/ch7SyJBx/logo.jpg" alt="Danny" width= "60px" height= "60px">
+            </div>
+            <h1 style="margin-left: 15px;margin-top: 5px;margin-bottom: 5px;font-size:26px">Danny<br>博客站</h1>
+        </div>
+        <!---右侧--->
+        <b><a style="color: black; font-size: 20px; margin-left: 30px" href="https://wa811203.github.io/re01/">首页</a></b>
     </div>
-    <div style="
+    <!---主内容--->
+    <div class="flex column">
+        <div style="
           max-width:700px;
           margin:30px auto;
           padding:15px;
@@ -28,24 +87,25 @@
         <p>你好</p>
         <p>你好</p>
         <p>你好</p>
-        <p>你好</p>
-        <p>你好</p>
-    </div>
-    <div style="
-            text-align: center;
-            padding: 40px;
-            font-size:12px;
+        </div>
+        <div style="
+          text-align: center;
+          padding: 40px;
+          font-size:12px;
         ">
         <link rel="stylesheet" type="text/css" href="button.css">
         <button> <span> <a href="./2.html" style="color:white">点击查看下一页</a> </span> </button>
-    </div>
+        </div>
 
+
+    </div>
+    <!---跳转信息--->
     <div style="
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 40px;
-            font-size:12px;
-        ">
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 40px;
+      font-size:12px;
+    ">
         <a href="https://substracker.dannychuang.dpdns.org">订阅管理系统</a>
     </div>
 </body>
